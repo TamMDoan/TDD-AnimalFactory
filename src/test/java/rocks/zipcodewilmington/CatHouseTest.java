@@ -24,6 +24,7 @@ public class CatHouseTest {
         int id = 123;
         Cat cat = new Cat(name, date, id);
 
+        CatHouse.clear();
         CatHouse.add(cat);
         Cat expectedCat = CatHouse.getCatById(id);
 
@@ -37,6 +38,7 @@ public class CatHouseTest {
         int id = 123;
         Cat cat = new Cat(name, date, id);
 
+        CatHouse.clear();
         CatHouse.add(cat);
         CatHouse.remove(cat);
         Cat expected = CatHouse.getCatById(id);
@@ -51,6 +53,7 @@ public class CatHouseTest {
         int id = 123;
         Cat cat = new Cat(name, date, id);
 
+        CatHouse.clear();
         CatHouse.remove(id);
 
         Assert.assertNull(CatHouse.getCatById(id));
@@ -64,6 +67,7 @@ public class CatHouseTest {
         int id = 123;
         Cat cat = new Cat(name, date, id);
 
+        CatHouse.clear();
         CatHouse.add(cat);
         Cat expected = CatHouse.getCatById(id);
 
